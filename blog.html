@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Canvas | Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="Digital Canvas Logo">
+                <h1>Digital Canvas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="blog.html" class="active">Портфолио</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-hero">
+            <div class="container">
+                <h2>Моё портфолио</h2>
+                <p>Некоторые из моих лучших работ за последние годы</p>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все работы</button>
+                    <button class="filter-btn" data-filter="logo">Логотипы</button>
+                    <button class="filter-btn" data-filter="web">Веб-дизайн</button>
+                    <button class="filter-btn" data-filter="mobile">Мобильные приложения</button>
+                </div>
+
+                <div class="blog-grid" id="portfolioGrid">
+                    <!-- Items will be loaded dynamically with JavaScript -->
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">→</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Digital Canvas. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Behance</a>
+                <a href="#">Dribbble</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
